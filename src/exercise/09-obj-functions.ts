@@ -1,5 +1,5 @@
 (()=>{
-  const login = (data: {email: string, password: number})=>{
+  const login = (data: {email: string, password: number}): void=>{
     console.log(data.email, data.password);
   }
 
@@ -51,6 +51,7 @@
 
 })();
 
+//Creacion del typo  User
 (() => {
   type User = { email: string; password: string | number };
 
@@ -66,6 +67,7 @@
   login(jesusUser);
 })();
 
+//Productos
 (() => {
   type Sizes = 'S' | 'M' | 'L' | 'XL';
   type Product = {
